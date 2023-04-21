@@ -2,6 +2,7 @@ package seleniumforint;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class LocatorConcept {
@@ -20,8 +21,8 @@ public class LocatorConcept {
         driver.findElement(By.id("aaa__input")).sendKeys("user0202A");
 
         //3.name
-        driver.findElement(By.name("lname")).sendKeys("Stark");
-
+       // driver.findElement(By.name("lname")).sendKeys("Stark");
+    driver.findElement(By.name("lname"));
         //4. linktext  // for text before </a> - only for links
        // driver.findElement(By.linkText("Generate a strong password")).click();
        // driver.findElement(By.linkText("Registration")).click();
