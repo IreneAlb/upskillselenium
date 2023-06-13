@@ -11,7 +11,7 @@ public class HandleDropBox {
     public static void main(String[] args) {
         WebDriver driver = new ChromeDriver(); // launching chrome
         driver.get("https://portalpacjenta.luxmed.pl/PatientPortal/NewPortal/Page/Account/Create");
-    // handle dropbox
+    // handle dropbox dropdown
         Select select = new Select (driver.findElement(By.id("flaga")));
         select.selectByVisibleText("English"); // but need to retry which options working for which dropdowns
     }
